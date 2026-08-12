@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://getkrowd-del.github.io/real-estate-wedinar-the-truth-about-claude/sitemap.xml
