@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/real-estate-wedinar-the-truth-about-claude/">
+<!-- BASE:END -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Register for the Free Claude Class for realtors. Cut through the AI hype and see how real automation works in real time.">
+    
+    <!-- Framework & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;600;700;800&family=Playfair+Display:ital,wght=0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    
+    
+    
+
+<!-- SEO Meta Tags -->
+<title>Real Estate Wedinar - The Truth About Claude</title>
+<meta property="og:title" content="Real Estate Wedinar - The Truth About Claude" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Real Estate Wedinar - The Truth About Claude" />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mseyyit0-6wgvt";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=5982');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='tN6FeBsm';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='tN6FeBsm';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#09090B] text-zinc-100 selection:bg-brandRed selection:text-white font-sans antialiased overflow-x-hidden min-h-screen flex flex-col justify-between">
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-[#000000]/90 backdrop-blur-md border-b border-zinc-900 transition-all duration-200" data-section="navbar">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3 shrink-0">
+                <a href="#" class="flex items-center">
+                    <img src="https://krowdimg.b-cdn.net/krowd-black.png" alt="Krowd Logo" class="h-7 sm:h-8 w-auto object-contain">
+                </a>
+                <span class="text-zinc-800 font-mono text-lg">|</span>
+                <span class="text-xl sm:text-2xl font-black tracking-tight text-white uppercase font-sans whitespace-nowrap">Instant<span class="text-brandRed">RE</span></span>
+            </div>
+            
+            <div class="hidden sm:flex items-center gap-8">
+                <a href="#reality-check" class="text-sm font-bold uppercase tracking-wider text-zinc-300 hover:text-white transition-colors">The Truth</a>
+                <a href="#interactive-section" class="text-sm font-bold uppercase tracking-wider text-brandYellow hover:text-white transition-colors">Watch &amp; Register</a>
+            </div>
+            
+            <div class="shrink-0">
+                <a href="#qa-form" class="inline-flex items-center justify-center px-6 py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider text-black bg-brandYellow hover:bg-yellow-300 active:scale-95 transition-all shadow-lg shadow-brandYellow/10 whitespace-nowrap gap-2">
+                    <i class="fa-solid fa-ticket text-sm"></i> Register For Free Class
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="space-y-20 py-12" data-section="section-1">
+
+        <!-- SECTION 1: REALITY CHECK HERO -->
+        <section id="reality-check" class="relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="bg-zinc-950/80 border border-zinc-900 rounded-3xl p-6 sm:p-12 shadow-2xl relative">
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                        
+                        <!-- LEFT COLUMN: YOUR PHOTO CARD -->
+                        <div class="lg:col-span-5 flex flex-col items-center justify-center">
+                            <div class="relative group w-full max-w-md">
+                                <!-- Glowing Border Accent -->
+                                <div class="absolute -inset-1 bg-gradient-to-r from-brandRed via-yellow-500 to-brandYellow rounded-3xl blur-lg opacity-50 group-hover:opacity-80 transition duration-500"></div>
+                                
+                                <div class="relative w-full aspect-[3/4] rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 shadow-2xl flex flex-col justify-end">
+                                    <img src="https://krowdimg.b-cdn.net/gary.jpg" 
+                                         alt="Gary" 
+                                         class="absolute inset-0 w-full h-full object-cover object-top hover:scale-105 transition-all duration-500">
+                                    
+                                    <!-- Name Overlay Badge -->
+                                    <div class="relative z-10 m-5 p-4 rounded-xl bg-black/90 backdrop-blur-md border border-zinc-800 text-left space-y-1">
+                                        <p class="text-sm sm:text-base font-extrabold text-white uppercase font-mono tracking-wider">Gary</p>
+                                        <p class="text-xs sm:text-sm text-brandYellow font-mono font-semibold">Real Estate &amp; AI Systems Expert</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT COLUMN: THE MYTH-BUSTING COPY -->
+                        <div class="lg:col-span-7 space-y-7 text-left">
+                            
+                            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brandRed/10 border border-brandRed/30 text-xs sm:text-sm font-mono font-extrabold text-brandRed uppercase tracking-wider">
+                                <i class="fa-solid fa-triangle-exclamation text-brandYellow text-base"></i> The Truth About Claude
+                            </div>
+
+                            <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.12]">
+                                Tired of "AI Gurus" selling fake buzzwords and <span class="font-serif italic font-normal text-brandYellow">unnecessary fluff?</span>
+                            </h1>
+
+                            <p class="text-zinc-300 text-lg sm:text-xl leading-relaxed font-normal">
+                                If you've watched online coaches claim they built an entire lead machine "for free in seconds using Claude," let's clear the air right now. Join my upcoming short class where we cut through the hype and run live tasks on screen.
+                            </p>
+
+                            <!-- MYTH VS TRUTH CARDS -->
+                            <div class="space-y-4 pt-2">
+                                
+                                <!-- Card 1 -->
+                                <div class="p-5 rounded-2xl bg-zinc-900/90 border border-zinc-800 space-y-1.5">
+                                    <div class="flex items-center gap-2 text-sm sm:text-base font-extrabold font-mono text-brandRed uppercase tracking-wider">
+                                        <i class="fa-solid fa-xmark text-base"></i> The Guru Myth: "You Need Claude CoWork &amp; Claude Design"
+                                    </div>
+                                    <p class="text-sm sm:text-base text-zinc-300 leading-relaxed font-sans">
+                                        <strong class="text-white font-bold">The Truth:</strong> Those are free downloads, but they add technical complexity that realtors simply do not need to worry about. Coaches overcomplicate basic AI setup to make standard prompting look like rocket science.
+                                    </p>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="p-5 rounded-2xl bg-zinc-900/90 border border-zinc-800 space-y-1.5">
+                                    <div class="flex items-center gap-2 text-sm sm:text-base font-extrabold font-mono text-brandRed uppercase tracking-wider">
+                                        <i class="fa-solid fa-xmark text-base"></i> The Guru Myth: "It Takes Seconds &amp; Secret Custom Skills"
+                                    </div>
+                                    <p class="text-sm sm:text-base text-zinc-300 leading-relaxed font-sans">
+                                        <strong class="text-white font-bold">The Truth:</strong> You don't need proprietary "skills" or "brain builders." Any agent can clone their market persona by simply chatting naturally with Claude or using a standard Claude Project for free.
+                                    </p>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="p-5 rounded-2xl bg-zinc-900/90 border border-brandYellow/40 bg-brandYellow/5 space-y-1.5">
+                                    <div class="flex items-center gap-2 text-sm sm:text-base font-extrabold font-mono text-brandYellow uppercase tracking-wider">
+                                        <i class="fa-solid fa-check text-base"></i> The Missing Piece: Actual Integration (Krowd)
+                                    </div>
+                                    <p class="text-sm sm:text-base text-zinc-200 leading-relaxed font-sans">
+                                        <strong class="text-white font-bold">The Truth:</strong> A text outline inside a chatbot isn't automation. It can't post to Facebook, sync with your MLS, or text leads 24/7. <strong class="text-brandYellow font-bold">Krowd is the missing engine</strong> that actually connects AI to your real estate pipeline.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <!-- CTA BUTTON -->
+                            <div class="pt-4">
+                                <a href="#qa-form" class="inline-flex items-center justify-center px-9 py-4.5 rounded-full text-sm sm:text-base font-black uppercase tracking-wider text-black bg-brandYellow hover:bg-yellow-300 active:scale-95 transition-all shadow-xl shadow-brandYellow/20 gap-2.5">
+                                    <i class="fa-solid fa-ticket text-base"></i> Reserve Spot For Free Class
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: SIDE-BY-SIDE VIDEO (LEFT) & FORM (RIGHT) -->
+        <section id="interactive-section" class="py-12 bg-zinc-950/80 border-t border-zinc-900">
+            <div class="max-w-7xl mx-auto px-6">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+                    
+                    <!-- LEFT COLUMN: YOUTUBE VIDEO + PROMPT SNIPPET + LINKS + SPECIAL OFFER DROPDOWN -->
+                    <div class="lg:col-span-6 space-y-6 text-left">
+                        
+                        <div class="space-y-3">
+                            <span class="text-xs sm:text-sm font-bold uppercase tracking-widest text-brandRed font-mono flex items-center gap-2">
+                                <i class="fa-brands fa-youtube text-xl text-brandRed"></i> Video Breakdown
+                            </span>
+                            <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight leading-tight">
+                                See What Real AI Integration <span class="font-serif italic font-normal text-brandYellow">Actually Looks Like</span>
+                            </h2>
+                            <p class="text-zinc-300 text-base sm:text-lg leading-relaxed">
+                                Watch this quick breakdown video before attending the live class to see the difference between chatbot text and real, hands-free automation.
+                            </p>
+                        </div>
+
+                        <!-- YOUTUBE VIDEO EMBED -->
+                        <div class="relative aspect-video w-full rounded-3xl overflow-hidden bg-black border-2 border-zinc-800 shadow-2xl glow-brand">
+                            <iframe 
+                                class="w-full h-full" 
+                                src="https://www.youtube.com/embed/y2ag90FCSxM" 
+                                title="Real Estate AI Breakdown" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <!-- PROMPT EXAMPLE CONTAINER WITH SNIPPET PREVIEW BY DEFAULT -->
+                        <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-4 sm:p-5 space-y-3">
+                            <div class="flex items-center gap-2 text-xs sm:text-sm font-extrabold font-mono text-brandYellow uppercase tracking-wider">
+                                <i class="fa-solid fa-terminal text-brandYellow"></i> Prompt Used To Generate Package:
+                            </div>
+                            
+                            <!-- Visible Snippet Preview -->
+                            <p class="text-xs sm:text-sm text-zinc-300 font-mono leading-relaxed border-l-2 border-brandYellow pl-3 italic">
+                                "Build a complete relocation lead-magnet package for Oneida County, NY. I want four connected deliverables, using the Marketing Media Manager tools..."
+                            </p>
+
+                            <!-- Expandable Full Prompt -->
+                            <details class="group pt-1">
+                                <summary class="flex items-center gap-2 text-xs font-bold font-mono text-zinc-400 hover:text-brandYellow cursor-pointer list-none select-none transition-colors">
+                                    <span>View Full Prompt Instructions</span>
+                                    <i class="fa-solid fa-chevron-down text-xs group-open:rotate-180 transition-transform"></i>
+                                </summary>
+                                <div class="mt-3 pt-3 border-t border-zinc-800 text-xs sm:text-sm text-zinc-300 font-mono leading-relaxed space-y-2.5 max-h-60 overflow-y-auto no-scrollbar">
+                                    <p>Build a complete relocation lead-magnet package for Oneida County, NY. I want four connected deliverables, using the Marketing Media Manager tools. Do not use any Krowd Real Estate MLS tools.</p>
+                                    <p class="text-zinc-400">Use my logo https://krowdimg.b-cdn.net/Elite%20Home/logo.png</p>
+                                    <p><strong>PDF Relocation Guide:</strong> Create a genuinely useful Oneida County relocation guide people will happily trade their email for. Cover: why people are moving to the area (honest, not salesy), what it actually costs to live/buy here right now with price bands by community, a decoded map of the main towns and villages (New Hartford, Utica, Rome, Whitesboro, Clinton, Sherrill, Vernon, etc.) and which lifestyle each fits, commuting and getting around, schools and family life, things to do year-round, and a short "first month here" checklist. Pull my voice, proof points, USP, and any local price data from my brain file. Include an About Me page and a clear CTA to book a call. Generate the guide as a polished, designed image/PDF asset ready to hand out.</p>
+                                    <p><strong>Landing Page:</strong> Build a landing page that offers the guide in exchange for name + email. Headline and copy should match my brand voice. Include a contact form wired to capture submissions, and set it up so submitting the form delivers the guide. Deploy it (GitHub Pages hosting) and give me the live URL.</p>
+                                    <p><strong>Comment Automation:</strong> Create a Facebook/Instagram comment automation: when someone comments a trigger keyword on my relocation posts, auto-reply publicly and DM them the link to the landing page so they can grab the guide. This should be done on the elite Home Group Demo FB &amp; IG Page. Make sure the button for the DM is point to the GitHub Pages landing page.</p>
+                                    <p><strong>GMB Post:</strong> Create a google my business Post offering the guide and give a link to the GitHub Pages landing page.</p>
+                                    <p><strong>Follow-Up Sequence:</strong> Set up an automated follow-up for everyone who opts in through the landing page. Create an email and/or SMS broadcast sequence that delivers the guide first, then nurtures them over the following days — a short welcome, a value-add touch, and a soft CTA to book a relocation call. Match my brand voice and keep it warm, not pushy. Trigger it off the form submission so new leads flow into it automatically.</p>
+                                </div>
+                            </details>
+                        </div>
+
+                        <!-- LIVE PROOF / ASSET LINKS -->
+                        <div class="space-y-3 pt-1">
+                            <span class="text-xs font-mono font-extrabold uppercase text-brandYellow tracking-wider block">
+                                <i class="fa-solid fa-link mr-1"></i> Live Example Links Generated:
+                            </span>
+                            <div class="flex flex-wrap gap-2.5">
+                                <a href="https://getkrowd-del.github.io/oneida-relocation-guide/guide.pdf" target="_blank" class="px-3.5 py-2 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-bold text-white hover:border-brandRed transition-colors flex items-center gap-2 shadow-sm">
+                                    <i class="fa-solid fa-file-pdf text-brandRed text-sm"></i> PDF Guide
+                                </a>
+                                <a href="https://getkrowd-del.github.io/oneida-relocation-guide/" target="_blank" class="px-3.5 py-2 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-bold text-white hover:border-brandYellow transition-colors flex items-center gap-2 shadow-sm">
+                                    <i class="fa-solid fa-globe text-brandYellow text-sm"></i> Landing Page
+                                </a>
+                                <a href="https://www.facebook.com/share/p/1BhC1xbcA6/" target="_blank" class="px-3.5 py-2 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-bold text-white hover:border-blue-500 transition-colors flex items-center gap-2 shadow-sm">
+                                    <i class="fa-brands fa-facebook text-[#1877F2] text-sm"></i> FB Post
+                                </a>
+                                <a href="https://www.instagram.com/p/Dbd420UknPw/" target="_blank" class="px-3.5 py-2 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-bold text-white hover:border-pink-500 transition-colors flex items-center gap-2 shadow-sm">
+                                    <i class="fa-brands fa-instagram text-[#E1306C] text-sm"></i> IG Post
+                                </a>
+                                <a href="https://share.google/RzYtFzDGsSX8PovuK" target="_blank" class="px-3.5 py-2 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-bold text-white hover:border-blue-400 transition-colors flex items-center gap-2 shadow-sm">
+                                    <i class="fa-brands fa-google text-[#4285F4] text-sm"></i> GMB Post
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- SPECIAL OFFER BUTTON (COLLAPSIBLE PRICING SECTION) -->
+                        <details class="group bg-gradient-to-r from-zinc-950 via-zinc-900 to-zinc-950 border-2 border-brandYellow rounded-3xl p-5 sm:p-6 shadow-2xl relative overflow-hidden text-left glow-yellow transition-all duration-300">
+                            <summary class="flex items-center justify-between text-sm sm:text-base font-black font-mono text-brandYellow uppercase tracking-wider cursor-pointer list-none select-none">
+                                <span class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-gift text-brandYellow text-lg"></i> View Special Offer &amp; Pricing
+                                </span>
+                                <div class="flex items-center gap-3">
+                                    <span class="px-3 py-1 rounded-full bg-brandRed text-white text-xs font-black uppercase tracking-wider shadow">
+                                        Only 10 Available
+                                    </span>
+                                    <i class="fa-solid fa-chevron-down text-zinc-400 group-open:rotate-180 transition-transform"></i>
+                                </div>
+                            </summary>
+
+                            <!-- EXPANDED CONTENT INSIDE SPECIAL OFFER -->
+                            <div class="mt-6 pt-5 border-t border-zinc-800 space-y-6">
+                                
+                                <!-- REGULAR PRICE & LIFETIME ACCESS PASS BANNER -->
+                                <div class="space-y-4">
+                                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+                                        <div class="space-y-2">
+                                            <h3 class="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-tight leading-tight">
+                                                <span class="text-brandRed font-black">Lifetime</span> Access Pass &mdash; <span class="text-brandYellow font-serif italic font-normal">$499 One-Time</span>
+                                            </h3>
+                                            <p class="text-sm sm:text-base text-zinc-300 leading-relaxed font-normal max-w-md">
+                                                Regular price is <strong class="text-brandYellow font-bold">$99/mo</strong> (+ MLS fee). Skip monthly subscriptions forever with this founder release!
+                                            </p>
+                                        </div>
+                                        <div class="text-left sm:text-right shrink-0 space-y-1">
+                                            <span class="text-zinc-400 text-xs sm:text-sm font-mono uppercase block font-semibold">Regular Value: $1,188/yr</span>
+                                            <div class="text-4xl sm:text-6xl font-black text-white font-sans tracking-tight my-1">$499</div>
+                                            <a href="https://buy.stripe.com/aFa8wO51Mfe53UkeZWabK1j" target="_blank" class="mt-2 inline-flex items-center justify-center px-6 py-3 rounded-full text-xs sm:text-sm font-black uppercase tracking-wider text-black bg-brandYellow hover:bg-yellow-300 transition-all shadow-md gap-2">
+                                                Claim Pass ($499) <i class="fa-solid fa-bolt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-wrap items-center gap-x-5 gap-y-2 pt-3 border-t border-zinc-800 text-xs sm:text-sm font-mono font-bold text-zinc-300">
+                                        <span class="text-brandRed font-extrabold"><i class="fa-solid fa-check"></i> Lifetime Access</span>
+                                        <span class="text-emerald-400"><i class="fa-solid fa-check"></i> Never Pay Monthly ($99/mo standard)</span>
+                                        <span class="text-brandYellow"><i class="fa-solid fa-circle-info"></i> MLS Billed Separately</span>
+                                    </div>
+                                    <p class="text-xs text-zinc-400 font-mono">
+                                        <i class="fa-solid fa-circle-exclamation text-brandYellow mr-1"></i> *Need MLS connection? The MLS fee is billed separately. Please contact us once you submit your payment.
+                                    </p>
+                                </div>
+
+                                <!-- SHARED MLS FEE BENEFIT CARD -->
+                                <div class="p-5 rounded-2xl bg-zinc-950 border border-brandYellow/40 shadow-inner space-y-2 text-left">
+                                    <div class="flex items-center gap-2 text-sm sm:text-base font-bold font-mono text-brandYellow">
+                                        <i class="fa-solid fa-users text-brandYellow text-base"></i> Shared MLS Fee Benefit
+                                    </div>
+                                    <p class="text-sm sm:text-base text-zinc-200 leading-relaxed font-medium">
+                                        The <strong class="text-white font-bold">$199/mo MLS fee can be split &amp; shared across any number of agents</strong> within the same MLS!
+                                    </p>
+                                    <p class="text-xs text-zinc-400 font-mono leading-normal pt-2 border-t border-zinc-900">
+                                        *Note: Any additional pass-through fees or direct data access charges from your specific MLS board remain the subscriber's responsibility.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </details>
+
+                    </div>
+
+                    <!-- RIGHT COLUMN: FREE CLASS REGISTRATION & Q&A FORM -->
+                    <div id="qa-form" class="lg:col-span-6">
+                        <div class="bg-gradient-to-b from-zinc-900 to-zinc-950 border-2 border-brandYellow/40 rounded-3xl p-6 sm:p-10 shadow-2xl space-y-6 text-left glow-yellow">
+                            
+                            <div class="space-y-2">
+                                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brandYellow/10 border border-brandYellow/30 text-xs font-mono font-bold text-brandYellow uppercase tracking-wider">
+                                    <i class="fa-solid fa-graduation-cap"></i> Free Short Class &amp; Live Q&amp;A
+                                </div>
+                                <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight">
+                                    Register For The Free Claude Class
+                                </h2>
+                                <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
+                                    Choose your preferred class time below, submit your questions for our live Q&amp;A, or request a 1-on-1 demo.
+                                </p>
+                            </div>
+
+                            <!-- SHORT CLASS BREAKDOWN -->
+                            <div class="p-4 sm:p-5 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
+                                <p class="text-xs sm:text-sm font-extrabold font-mono text-brandYellow uppercase tracking-wider flex items-center gap-2">
+                                    <i class="fa-solid fa-bolt text-brandYellow"></i> Short Class Breakdown:
+                                </p>
+                                <ul class="space-y-2.5 text-xs sm:text-sm text-zinc-300 font-medium">
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-brandYellow mt-1 shrink-0"></i>
+                                        <span><strong>The Truth About Claude:</strong> Learn how to clone your market voice for free without overcomplicating downloads or unnecessary add-ons.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-brandYellow mt-1 shrink-0"></i>
+                                        <span><strong>Live Tasks &amp; Q&amp;A:</strong> We will run real tasks live during Q&amp;A so you can see exactly how long things take and what's actually possible.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-brandYellow mt-1 shrink-0"></i>
+                                        <span><strong>Real Automation vs Hype:</strong> Discover why chatbot text outlines fail without direct MLS &amp; CRM connectivity.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- FORM -->
+                            <div id="realtor-contact-form" class="space-y-5">
+                                
+                                <!-- CLASS DATE & TIME SELECTOR -->
+                                <div class="space-y-2">
+                                    <label class="block text-xs sm:text-sm font-extrabold uppercase font-mono text-zinc-200">
+                                        Select Your Class Date &amp; Time <span class="text-brandRed">*</span>
+                                    </label>
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                        <label class="flex items-center gap-3 p-3.5 rounded-xl bg-zinc-950 border border-zinc-800 cursor-pointer hover:border-brandYellow transition-colors group">
+                                            <input type="radio" name="class_date" value="August 5th at 7:00 PM" required class="w-4 h-4 text-brandYellow accent-brandYellow focus:ring-brandYellow">
+                                            <div class="text-left">
+                                                <p class="text-xs sm:text-sm font-bold text-white group-hover:text-brandYellow transition-colors">Wednesday, Aug 5th</p>
+                                                <p class="text-xs font-mono text-zinc-400">7:00 PM EST</p>
+                                            </div>
+                                        </label>
+
+                                        <label class="flex items-center gap-3 p-3.5 rounded-xl bg-zinc-950 border border-zinc-800 cursor-pointer hover:border-brandYellow transition-colors group">
+                                            <input type="radio" name="class_date" value="August 10th at 10:00 AM" class="w-4 h-4 text-brandYellow accent-brandYellow focus:ring-brandYellow">
+                                            <div class="text-left">
+                                                <p class="text-xs sm:text-sm font-bold text-white group-hover:text-brandYellow transition-colors">Monday, Aug 10th</p>
+                                                <p class="text-xs font-mono text-zinc-400">10:00 AM EST</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <!-- Full Name -->
+                                    <div class="space-y-1.5">
+                                        <label for="realtor-name" class="block text-xs sm:text-sm font-bold uppercase font-mono text-zinc-300">
+                                            Full Name <span class="text-brandRed">*</span>
+                                        </label>
+                                        <input type="text" id="realtor-name" required placeholder="Jane Doe" 
+                                            class="w-full bg-zinc-950 border border-zinc-800 text-base px-4 py-3 rounded-xl text-white focus:outline-none focus:border-brandYellow transition-colors">
+                                    </div>
+
+                                    <!-- Email Address -->
+                                    <div class="space-y-1.5">
+                                        <label for="realtor-email" class="block text-xs sm:text-sm font-bold uppercase font-mono text-zinc-300">
+                                            Email Address <span class="text-brandRed">*</span>
+                                        </label>
+                                        <input type="email" id="realtor-email" required placeholder="jane@realty.com" 
+                                            class="w-full bg-zinc-950 border border-zinc-800 text-base px-4 py-3 rounded-xl text-white focus:outline-none focus:border-brandYellow transition-colors">
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <!-- Phone Number -->
+                                    <div class="space-y-1.5">
+                                        <label for="realtor-phone" class="block text-xs sm:text-sm font-bold uppercase font-mono text-zinc-300">
+                                            Phone <span class="text-brandRed">*</span>
+                                        </label>
+                                        <input type="tel" id="realtor-phone" required placeholder="(555) 000-0000" 
+                                            class="w-full bg-zinc-950 border border-zinc-800 text-base px-4 py-3 rounded-xl text-white focus:outline-none focus:border-brandYellow transition-colors">
+                                    </div>
+
+                                    <!-- Brokerage / Market -->
+                                    <div class="space-y-1.5">
+                                        <label for="realtor-market" class="block text-xs sm:text-sm font-bold uppercase font-mono text-zinc-300">
+                                            Brokerage / Market
+                                        </label>
+                                        <input type="text" id="realtor-market" placeholder="e.g. eXp / Austin, TX" 
+                                            class="w-full bg-zinc-950 border border-zinc-800 text-base px-4 py-3 rounded-xl text-white focus:outline-none focus:border-brandYellow transition-colors">
+                                    </div>
+                                </div>
+
+                                <!-- Question / Message Textarea + LIVE GUARANTEE NOTE -->
+                                <div class="space-y-1.5">
+                                    <label for="realtor-question" class="block text-xs sm:text-sm font-bold uppercase font-mono text-zinc-300">
+                                        Questions For The Class Q&amp;A Session
+                                    </label>
+                                    <textarea id="realtor-question" rows="3" placeholder="What tasks or questions would you like Gary to test live on screen during the class?" 
+                                        class="w-full bg-zinc-950 border border-zinc-800 text-base p-4 rounded-xl text-white focus:outline-none focus:border-brandYellow transition-colors"></textarea>
+                                    <p class="text-xs text-brandYellow font-mono flex items-center gap-1.5 pt-1">
+                                        <i class="fa-solid fa-shield-halved"></i> <strong>Live Guarantee:</strong> Gary will review and test submitted tasks live during the class Q&amp;A!
+                                    </p>
+                                </div>
+
+                                <!-- Checkbox for Demo Request -->
+                                <div class="p-4 rounded-xl bg-zinc-950 border border-zinc-800">
+                                    <label class="flex items-center gap-3 cursor-pointer">
+                                        <input type="checkbox" id="realtor-demo-check" class="w-5 h-5 rounded bg-zinc-900 border-zinc-700 text-brandYellow accent-brandYellow focus:ring-brandYellow shrink-0">
+                                        <span class="text-xs sm:text-sm font-semibold text-zinc-200">
+                                            I would also like to schedule a private 1-on-1 demo of Krowd.
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div>
+                                    <button type="button" id="realtor-submit-btn" onclick="handleFormSubmit()" class="w-full py-4.5 rounded-full text-sm sm:text-base font-extrabold uppercase tracking-wider text-black bg-brandYellow hover:bg-yellow-300 active:scale-95 transition-all shadow-lg shadow-brandYellow/10">
+                                        Register For Free Class <i class="fa-solid fa-arrow-right ml-1.5"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <!-- Success Message Display -->
+                            <div id="form-success-msg" class="hidden p-6 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-center space-y-2">
+                                <i class="fa-solid fa-circle-check text-3xl"></i>
+                                <h4 class="text-lg font-bold uppercase font-mono">You're Registered!</h4>
+                                <p class="text-sm text-zinc-300">We've locked in your spot for the Free Claude Class. Keep an eye on your email inbox for class access links and calendar invites.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-zinc-900 bg-black text-zinc-400 text-xs sm:text-sm font-mono" data-section="footer">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="text-base font-black tracking-tight text-white uppercase font-sans">Instant<span class="text-brandRed">RE</span></span>
+                <span>by <strong class="text-white">Krowd</strong></span>
+            </div>
+            <p>&copy; 2026 Krowd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPT -->
+    <script>
+        var WEBHOOK_URL = 'https://paymegpt.com/api/webhooks/flow/4678/9a1c7e8ba43101ebd3856713d1957f7f3040ab24e9a32caa19b32b6ef5371fe1';
+
+        function handleFormSubmit() {
+            var classDateInput = document.querySelector('input[name="class_date"]:checked');
+            var name = document.getElementById('realtor-name').value.trim();
+            var email = document.getElementById('realtor-email').value.trim();
+            var phone = document.getElementById('realtor-phone').value.trim();
+            var market = document.getElementById('realtor-market').value.trim();
+            var question = document.getElementById('realtor-question').value.trim();
+            var demoChecked = document.getElementById('realtor-demo-check').checked;
+
+            if (!classDateInput) { alert('Please select a class date & time.'); return; }
+            if (!name || !email || !phone) { alert('Please fill in your name, email, and phone.'); return; }
+
+            var btn = document.getElementById('realtor-submit-btn');
+            btn.disabled = true;
+            btn.innerHTML = 'Registering...';
+
+            fetch(WEBHOOK_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    contactName: name,
+                    contactEmail: email,
+                    contactPhone: phone,
+                    data: {
+                        class_date: classDateInput.value,
+                        brokerage_market: market,
+                        question: question,
+                        demo_requested: demoChecked ? 'Yes' : 'No'
+                    }
+                })
+            })
+            .catch(function(err) { console.warn('Webhook error:', err); })
+            .finally(function() {
+                var form = document.getElementById('realtor-contact-form');
+                var successMsg = document.getElementById('form-success-msg');
+                form.classList.add('hidden');
+                successMsg.classList.remove('hidden');
+            });
+        }
+    </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
