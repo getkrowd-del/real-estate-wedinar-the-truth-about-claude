@@ -1,0 +1,6 @@
+.no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .glow-red { box-shadow: 0 0 40px rgba(239, 68, 68, 0.18); }
+        .glow-yellow { box-shadow: 0 0 40px rgba(252, 226, 20, 0.15); }
+        .glow-brand { box-shadow: 0 0 50px rgba(239, 68, 68, 0.1); }
+        .glass-panel { background: rgba(18, 18, 24, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
